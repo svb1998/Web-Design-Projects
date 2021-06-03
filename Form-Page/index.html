@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Encuesta sobre criptomonedas</h1>
+        <p id="description">Rellena la siguiente encuesta sobre criptomonedas:</p>
+    </header>
+    <main>
+    <form id="survey-form">
+        <label id="name-label" for="name">
+            <h4>Nombre: </h4> 
+            <input id="name" type="text" placeholder="Introduce tu nombre" required>
+        </label>
+        <br>
+        <label id="email-label" for="email">
+            <h4>Email: </h4> 
+            <input id="email" type="email" placeholder="Introduce tu correo electrónico" required>
+        </label>
+        <br>
+        <label id="number-label" for="number">
+            <h4>Edad:</h4> 
+            <input id="number" type="number" min="0" max="100" placeholder="0-100" required>
+        </label>
+        <br>
+        <label id="desplegable" for="dropdown">
+            <h4>Selecciona tu criptomoneda preferida:</h4> 
+            <select name="dropdown" id="dropdown">
+                <option>Bitcoin</option>
+                <option>Ethereum</option>
+                <option>Cardano</option>
+                <option>Chainlink</option>
+            </select>
+        </label>
+        <br>
+        <h4>Cuantos años hace que conoces sobre criptomonedas?</h4>
+        <label for="name" class="radio-group">
+            <input type="radio" name="name" id="name" value="1"> 1 año
+        </label>
+        <label for="name" class="radio-group">
+            <input type="radio" name="name" id="name" value="2"> 2 años
+        </label>
+        <label for="name" class="radio-group">
+            <input type="radio" name="name" id="name" value="5"> 5 años
+        </label>
+        <label for="name" class="radio-group">
+            <input type="radio" name="name" id="name" value="+5"> +5 años
+        </label>
+        <br>
+        <h4>Cuál/es de estas criptomonedas tienes en tu portfolio?</h4>
+        <label for="cb1">
+            <input type="checkbox" name="cb1" id="cb1" value="BTC"> Bitcoin
+        </label>
+        <label for="cb2">
+            <input type="checkbox" name="cb2" id="cb2" value="ETH"> Ethereum
+        </label>
+        <label for="cb3">
+            <input type="checkbox" name="cb3" id="cb3" value="ADA"> Cardano
+        </label>
+        <label for="cb4">
+            <input type="checkbox" name="cb4" id="cb4" value="LINK"> Chainlink
+        </label>
+        <br>
+        <label for="final-comments">
+            <h4>Introduce aquí comentarios adicionales: </h4>
+            <textarea name="textarea" id="final-comments" cols="90" rows="10"></textarea>
+        </label>
+        <br>
+        <input id="submit" type="submit" value="Enviar">
+        
+        
+            
+            
+    </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgb(235, 245, 244);
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 23%;
+    height: 100%;
+    
+}
+#titulo{
+    font-size: 12px;
+    overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    border: 10px solid black;
+    background-color: rgb(200, 245, 240);
+}
+
+.nav-links{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: rgb(95, 126, 123);
+}
+
+.link{
+    width: 98%;
+    margin: 5px;
+    margin-left: 20px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#main-doc{
+    margin-left: 26%;
+    margin-top: 30px;
+
+    padding-left: 4%;
+    padding-right: 7%;
+}
+
+h1{
+    font-size: 35px;
+}
+
+p{
+    margin-block: 20px;
+    text-align: justify;
+}
+
+li, code{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.main-section{
+    margin-bottom: 60px;
+}
+
+
+@media (max-width: 1230px){
+    #titulo{
+        font-size: 8px;
+    }
+    .link{
+        font-size: 20px
+    }
+}
